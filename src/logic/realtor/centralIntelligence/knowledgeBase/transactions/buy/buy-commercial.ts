@@ -1,0 +1,311 @@
+import { IndividualKnowledgeRuleSet } from "../../../../../../types/realtor";
+
+export const BUY_COMMERCIAL_KNOWLEDGE: Record<
+  string,
+  IndividualKnowledgeRuleSet
+> = {
+  TX: {
+    version: "1.0",
+    requiredForms: [
+      { formType: "IABS", placement: "deal-wide" },
+      {
+        formType: "landlord_floodplain_notice",
+        placement: "property-specific",
+        form_stage: "initial_review",
+      },
+      {
+        formType: "Animal_Agreement",
+        placement: "property-specific",
+        form_stage: "initial_review",
+      },
+    ],
+    suggestions: [
+      {
+        message:
+          "Commercial property inspections often require specialized inspectors (e.g., structural engineers, environmental assessors).",
+        showTo: "user",
+      },
+    ],
+    partyIntakeSchemas: {
+      buyer1_schema: [
+        {
+          mapping: [],
+          unique_id: "buyer1_business_name",
+          display_attributes: {
+            block: "Business Information",
+            order: 1,
+            value: { type: "manual" },
+            input_type: "text",
+            display_name: "Business Name",
+            placeholder: "Enter legal business name",
+            isRequired: true,
+          },
+        },
+        {
+          mapping: [],
+          unique_id: "buyer1_business_type",
+          display_attributes: {
+            block: "Business Information",
+            order: 2,
+            value: { type: "manual" },
+            input_type: "radio",
+            display_name: "Business Type",
+            display_radio_options: [
+              "Corporation",
+              "LLC",
+              "Partnership",
+              "Sole Proprietorship",
+            ],
+            isRequired: true,
+          },
+        },
+        {
+          mapping: [],
+          unique_id: "buyer1_tax_id",
+          display_attributes: {
+            block: "Business Information",
+            order: 3,
+            value: { type: "manual" },
+            input_type: "text",
+            display_name: "Tax ID/EIN",
+            placeholder: "XX-XXXXXXX",
+            isRequired: true,
+          },
+        },
+        {
+          mapping: [],
+          unique_id: "buyer1_authorized_representative",
+          display_attributes: {
+            block: "Contact Information",
+            order: 4,
+            value: { type: "manual" },
+            input_type: "text",
+            display_name: "Authorized Representative",
+            placeholder: "Full name of authorized signatory",
+            isRequired: true,
+          },
+        },
+        {
+          mapping: [],
+          unique_id: "buyer1_title",
+          display_attributes: {
+            block: "Contact Information",
+            order: 5,
+            value: { type: "manual" },
+            input_type: "text",
+            display_name: "Title/Position",
+            placeholder: "CEO, President, Managing Member, etc.",
+            isRequired: true,
+          },
+        },
+        {
+          mapping: [],
+          unique_id: "buyer1_email",
+          display_attributes: {
+            block: "Contact Information",
+            order: 6,
+            value: { type: "manual" },
+            input_type: "text",
+            display_name: "Business Email",
+            placeholder: "Enter business email address",
+            isRequired: true,
+          },
+        },
+        {
+          mapping: [],
+          unique_id: "buyer1_phone",
+          display_attributes: {
+            block: "Contact Information",
+            order: 7,
+            value: { type: "manual" },
+            input_type: "text",
+            display_name: "Business Phone",
+            placeholder: "Enter business phone number",
+            isRequired: true,
+          },
+        },
+        {
+          mapping: [],
+          unique_id: "buyer1_address",
+          display_attributes: {
+            block: "Contact Information",
+            order: 8,
+            value: { type: "manual" },
+            input_type: "text",
+            display_name: "Business Address",
+            placeholder: "Enter business mailing address",
+            isRequired: true,
+          },
+        },
+        {
+          mapping: [],
+          unique_id: "buyer1_intended_use",
+          display_attributes: {
+            block: "Property Information",
+            order: 9,
+            value: { type: "manual" },
+            input_type: "text",
+            display_name: "Intended Use of Property",
+            placeholder: "Office, retail, warehouse, etc.",
+            isRequired: true,
+          },
+        },
+        {
+          mapping: [],
+          unique_id: "buyer1_financing_type",
+          display_attributes: {
+            block: "Financial Information",
+            order: 10,
+            value: { type: "manual" },
+            input_type: "radio",
+            display_name: "Financing Type",
+            display_radio_options: [
+              "Cash",
+              "Commercial Loan",
+              "SBA Loan",
+              "Other",
+            ],
+            isRequired: true,
+          },
+        },
+        {
+          mapping: [],
+          unique_id: "buyer1_signature",
+          display_attributes: {
+            block: "Legal",
+            order: 11,
+            value: { type: "manual" },
+            input_type: "signature",
+            display_name: "Authorized Signature",
+            isRequired: true,
+          },
+        },
+      ],
+      buyer2_schema: [
+        {
+          mapping: [],
+          unique_id: "buyer2_business_name",
+          display_attributes: {
+            block: "Business Information",
+            order: 1,
+            value: { type: "manual" },
+            input_type: "text",
+            display_name: "Business Name",
+            placeholder: "Enter legal business name",
+            isRequired: false,
+          },
+        },
+        {
+          mapping: [],
+          unique_id: "buyer2_business_type",
+          display_attributes: {
+            block: "Business Information",
+            order: 2,
+            value: { type: "manual" },
+            input_type: "radio",
+            display_name: "Business Type",
+            display_radio_options: [
+              "Corporation",
+              "LLC",
+              "Partnership",
+              "Sole Proprietorship",
+            ],
+            isRequired: false,
+          },
+        },
+        {
+          mapping: [],
+          unique_id: "buyer2_tax_id",
+          display_attributes: {
+            block: "Business Information",
+            order: 3,
+            value: { type: "manual" },
+            input_type: "text",
+            display_name: "Tax ID/EIN",
+            placeholder: "XX-XXXXXXX",
+            isRequired: false,
+          },
+        },
+        {
+          mapping: [],
+          unique_id: "buyer2_authorized_representative",
+          display_attributes: {
+            block: "Contact Information",
+            order: 4,
+            value: { type: "manual" },
+            input_type: "text",
+            display_name: "Authorized Representative",
+            placeholder: "Full name of authorized signatory",
+            isRequired: false,
+          },
+        },
+        {
+          mapping: [],
+          unique_id: "buyer2_title",
+          display_attributes: {
+            block: "Contact Information",
+            order: 5,
+            value: { type: "manual" },
+            input_type: "text",
+            display_name: "Title/Position",
+            placeholder: "CEO, President, Managing Member, etc.",
+            isRequired: false,
+          },
+        },
+        {
+          mapping: [],
+          unique_id: "buyer2_email",
+          display_attributes: {
+            block: "Contact Information",
+            order: 6,
+            value: { type: "manual" },
+            input_type: "text",
+            display_name: "Business Email",
+            placeholder: "Enter business email address",
+            isRequired: false,
+          },
+        },
+        {
+          mapping: [],
+          unique_id: "buyer2_phone",
+          display_attributes: {
+            block: "Contact Information",
+            order: 7,
+            value: { type: "manual" },
+            input_type: "text",
+            display_name: "Business Phone",
+            placeholder: "Enter business phone number",
+            isRequired: false,
+          },
+        },
+        {
+          mapping: [],
+          unique_id: "buyer2_address",
+          display_attributes: {
+            block: "Contact Information",
+            order: 8,
+            value: { type: "manual" },
+            input_type: "text",
+            display_name: "Business Address",
+            placeholder: "Enter business mailing address",
+            isRequired: false,
+          },
+        },
+      ],
+    },
+    availableForms: {
+      deal_wide: [{ formType: "IABS" }, { formType: "Third_party_financing" }],
+      property_specific: [
+        {
+          formType: "landlord_floodplain_notice",
+          preferredStage: "initial_review",
+        },
+      ],
+    },
+    stages: [
+      { name: "initial_review", color: "#8B5CF6", order: 0 },
+      { name: "negotiation", color: "#F59E0B", order: 1 },
+      { name: "execution", color: "#10B981", order: 2 },
+    ],
+  },
+};

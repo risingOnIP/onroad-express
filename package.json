@@ -1,0 +1,53 @@
+{
+  "name": "onroad-express",
+  "version": "1.0.0",
+  "description": "Express and TypeScript API for OnroadAI: deals, forms, PDF overlays, e-signature, and AI contract drafting",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "node dist/index.js",
+    "dev": "nodemon src/index.ts",
+    "build": "tsc && npm run copy-assets",
+    "copy-assets": "cpx 'src/lib/**/*' dist/lib",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@ai-sdk/openai": "^1.2.9",
+    "@anthropic-ai/sdk": "^0.39.0",
+    "@openai/agents": "^0.0.16",
+    "@supabase/supabase-js": "^2.39.7",
+    "@types/multer": "^1.4.13",
+    "@types/pdf-parse": "^1.1.5",
+    "@types/uuid": "^10.0.0",
+    "ai": "^4.3.19",
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "cpx": "^1.5.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.3",
+    "form-data": "^4.0.4",
+    "jsonwebtoken": "^9.0.2",
+    "mailgun.js": "^12.0.3",
+    "multer": "^2.0.1",
+    "node-fetch": "^3.3.2",
+    "openai": "^5.12.2",
+    "pdf-lib": "^1.17.1",
+    "pdf-parse": "^1.1.1",
+    "uuid": "^11.1.0",
+    "xlsx": "^0.18.5",
+    "zod": "^3.25.67"
+  },
+  "devDependencies": {
+    "@types/cookie-parser": "^1.4.8",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/form-data": "^2.2.1",
+    "@types/jsonwebtoken": "^9.0.6",
+    "@types/node": "^20.11.24",
+    "nodemon": "^3.1.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  },
+  "private": true
+}

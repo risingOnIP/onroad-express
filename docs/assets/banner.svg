@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="320" viewBox="0 0 1280 320" role="img" aria-label="OnroadAI API">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111827"/>
+      <stop offset="1" stop-color="#1F2937"/>
+    </linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#FFFFFF" stroke-opacity="0.04" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="fade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0.55" stop-color="#111827" stop-opacity="1"/>
+      <stop offset="0.75" stop-color="#111827" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="320" rx="18" fill="url(#bg)"/>
+  <rect width="1280" height="320" rx="18" fill="url(#grid)"/>
+  <g>
+    <line x1="1066" y1="255" x2="1059" y2="278" stroke="#2563EB" stroke-opacity="0.45" stroke-width="1.5"/>
+    <line x1="1066" y1="255" x2="1097" y2="205" stroke="#2563EB" stroke-opacity="0.45" stroke-width="1.5"/>
+    <line x1="947" y1="190" x2="956" y2="180" stroke="#2563EB" stroke-opacity="0.45" stroke-width="1.5"/>
+    <line x1="947" y1="190" x2="944" y2="228" stroke="#2563EB" stroke-opacity="0.45" stroke-width="1.5"/>
+    <line x1="1035" y1="66" x2="1086" y2="46" stroke="#2563EB" stroke-opacity="0.45" stroke-width="1.5"/>
+    <line x1="1035" y1="66" x2="977" y2="76" stroke="#2563EB" stroke-opacity="0.45" stroke-width="1.5"/>
+    <line x1="1170" y1="171" x2="1097" y2="205" stroke="#2563EB" stroke-opacity="0.45" stroke-width="1.5"/>
+    <line x1="1170" y1="171" x2="1238" y2="239" stroke="#2563EB" stroke-opacity="0.45" stroke-width="1.5"/>
+    <line x1="1086" y1="46" x2="977" y2="76" stroke="#2563EB" stroke-opacity="0.45" stroke-width="1.5"/>
+    <line x1="956" y1="180" x2="944" y2="228" stroke="#2563EB" stroke-opacity="0.45" stroke-width="1.5"/>
+    <line x1="1238" y1="239" x2="1097" y2="205" stroke="#2563EB" stroke-opacity="0.45" stroke-width="1.5"/>
+    <line x1="904" y1="194" x2="879" y2="214" stroke="#2563EB" stroke-opacity="0.45" stroke-width="1.5"/>
+    <line x1="864" y1="240" x2="879" y2="214" stroke="#2563EB" stroke-opacity="0.45" stroke-width="1.5"/>
+    <line x1="1059" y1="278" x2="1097" y2="205" stroke="#2563EB" stroke-opacity="0.45" stroke-width="1.5"/>
+    <circle cx="1066" cy="255" r="13" fill="#B45309" fill-opacity="0.12"/>
+    <circle cx="1066" cy="255" r="7" fill="#B45309"/>
+    <circle cx="947" cy="190" r="10" fill="#2563EB" fill-opacity="0.12"/>
+    <circle cx="947" cy="190" r="4" fill="#2563EB"/>
+    <circle cx="1035" cy="66" r="11" fill="#2563EB" fill-opacity="0.12"/>
+    <circle cx="1035" cy="66" r="5" fill="#2563EB"/>
+    <circle cx="1170" cy="171" r="11" fill="#2563EB" fill-opacity="0.12"/>
+    <circle cx="1170" cy="171" r="5" fill="#2563EB"/>
+    <circle cx="1086" cy="46" r="10" fill="#2563EB" fill-opacity="0.12"/>
+    <circle cx="1086" cy="46" r="4" fill="#2563EB"/>
+    <circle cx="956" cy="180" r="10" fill="#2563EB" fill-opacity="0.12"/>
+    <circle cx="956" cy="180" r="4" fill="#2563EB"/>
+    <circle cx="1238" cy="239" r="11" fill="#2563EB" fill-opacity="0.12"/>
+    <circle cx="1238" cy="239" r="5" fill="#2563EB"/>
+    <circle cx="944" cy="228" r="9" fill="#2563EB" fill-opacity="0.12"/>
+    <circle cx="944" cy="228" r="3" fill="#2563EB"/>
+    <circle cx="904" cy="194" r="10" fill="#2563EB" fill-opacity="0.12"/>
+    <circle cx="904" cy="194" r="4" fill="#2563EB"/>
+    <circle cx="864" cy="240" r="10" fill="#2563EB" fill-opacity="0.12"/>
+    <circle cx="864" cy="240" r="4" fill="#2563EB"/>
+    <circle cx="879" cy="214" r="11" fill="#2563EB" fill-opacity="0.12"/>
+    <circle cx="879" cy="214" r="5" fill="#2563EB"/>
+    <circle cx="893" cy="130" r="11" fill="#2563EB" fill-opacity="0.12"/>
+    <circle cx="893" cy="130" r="5" fill="#2563EB"/>
+    <circle cx="957" cy="280" r="10" fill="#2563EB" fill-opacity="0.12"/>
+    <circle cx="957" cy="280" r="4" fill="#2563EB"/>
+    <circle cx="1059" cy="278" r="9" fill="#2563EB" fill-opacity="0.12"/>
+    <circle cx="1059" cy="278" r="3" fill="#2563EB"/>
+    <circle cx="1097" cy="205" r="11" fill="#2563EB" fill-opacity="0.12"/>
+    <circle cx="1097" cy="205" r="5" fill="#2563EB"/>
+    <circle cx="977" cy="76" r="11" fill="#2563EB" fill-opacity="0.12"/>
+    <circle cx="977" cy="76" r="5" fill="#2563EB"/>
+  </g>
+  <rect width="1280" height="320" rx="18" fill="url(#fade)" fill-opacity="0.85"/>
+  <rect x="0" y="56" width="8" height="208" fill="#15803D"/>
+  <text x="72" y="128" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="58" font-weight="700" fill="#F9FAFB">OnroadAI API</text>
+  <text x="72" y="176" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="22" fill="#CBD5E1">The Express and TypeScript service behind OnroadAI: deals,</text>
+  <text x="72" y="208" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="22" fill="#CBD5E1">forms, PDF overlays, e-signature, and AI contract drafting.</text>
+  <rect x="72" y="248" width="128" height="32" rx="16" fill="#15803D" fill-opacity="0.18" stroke="#15803D" stroke-width="1.5"/>
+  <text x="136.0" y="269" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="1.2" fill="#F9FAFB">PRODUCTION</text>
+  <rect x="212" y="248" width="99" height="32" rx="16" fill="#2563EB" fill-opacity="0.18" stroke="#2563EB" stroke-width="1.5"/>
+  <text x="261.5" y="269" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="1.2" fill="#F9FAFB">EXPRESS</text>
+  <rect x="323" y="248" width="118" height="32" rx="16" fill="#2563EB" fill-opacity="0.18" stroke="#2563EB" stroke-width="1.5"/>
+  <text x="382.0" y="269" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="1.2" fill="#F9FAFB">AI AGENTS</text>
+</svg>
